@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Web - Consumo API</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <h1> Portal de Mascotas en Tiempo Real</h1>
+    <p>Diseño de Sistemas de Internet - Consumo de APIs Públicas</p>
+  </header>
+
+  <main class="container">
+    <!-- Buscador y Controles -->
+    <section class="search-section">
+      <h2>Explorador de The Cat API</h2>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Busca una raza">
+        <button id="btnSearchAsync" class="btn btn-primary">Buscar</button>
+        <button id="btnLoadDefault" class="btn btn-secondary">Cargar Aleatorios</button>
+      </div>
+    </section>
+
+    <!-- Métricas HTTP -->
+    <section id="metricsBar" class="metrics hidden">
+      <div class="metric-item"><strong>Estado:</strong> <span id="metricStatus">-</span></div>
+      <div class="metric-item"><strong>Tiempo:</strong> <span id="metricTime">0 ms</span></div>
+      <div class="metric-item"><strong>Mecanismo:</strong> <span id="metricMethod">-</span></div>
+    </section>
+
+    <!-- Mensaje de estado -->
+    <div id="statusMessage" class="status-msg"></div>
+
+    <!-- Contenedor de Resultados (Grid de Gatos) -->
+    <section id="resultContainer" class="cat-grid">
+      <!-- Las tarjetas se inyectan dinámicamente aquí -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Portal de Consumo de API - Universidad Nacional de Ingeniería</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
